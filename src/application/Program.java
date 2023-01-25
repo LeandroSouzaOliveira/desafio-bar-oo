@@ -14,7 +14,7 @@ public class Program {
 		
 		Bill bill = new Bill();
 		
-		//information gathering:
+		//collecting the data:
 		System.out.print("Sexo: ");
 		bill.gender = sc.next().charAt(0);
 		System.out.print("Quantidade de cervejas: ");
@@ -25,7 +25,21 @@ public class Program {
 		bill.barbecue = sc.nextInt();
 		
 		//report:
+		System.out.println();
+		System.out.println("RELATÓRIO:");
+		System.out.printf("Consumo = R$ %.2f%n", bill.feeding());
 		
+		if (bill.cover() == 0.0) {
+			System.out.println("Isento de Couvert");
+		}
+		else {
+			System.out.printf("Couvert = R$ %.2f%n", bill.cover());	
+		}
+		
+		System.out.printf("Ingresso = R$ %.2f%n", bill.ticket());
+		
+		System.out.println();
+		System.out.printf("Valor a pagar = R$ %.2f%n", bill.total());
 		
 		sc.close();
 	}

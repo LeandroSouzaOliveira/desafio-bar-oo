@@ -34,6 +34,6 @@ public class Bill {
 	}
 	
 	public double total() {
-		return feeding() - cover() - ticket();
+		return feeding() + cover() + ticket();
 	}
 }
