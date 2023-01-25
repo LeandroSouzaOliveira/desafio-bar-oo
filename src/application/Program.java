@@ -1,10 +1,36 @@
 package application;
 
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Bill;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Bill bill = new Bill();
+		
+		//Coletando os dados:
+		System.out.print("Sexo: ");
+		bill.gender = sc.next().charAt(0);
+		System.out.print("Quantidade de cervejas: ");
+		bill.beer = sc.nextInt();
+		System.out.print("Quantidade de refrigerantes: ");
+		bill.softDrink = sc.nextInt();
+		System.out.print("Quantidade de espetinhos: ");
+		bill.barbecue = sc.nextInt();
+		
+		//cálculo dos valores:
+		
+		
+		//informações do relatório:
+		
+		
+		sc.close();
 	}
 
 }
