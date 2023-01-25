@@ -14,7 +14,7 @@ public class Program {
 		
 		Bill bill = new Bill();
 		
-		//Coletando os dados:
+		//information gathering:
 		System.out.print("Sexo: ");
 		bill.gender = sc.next().charAt(0);
 		System.out.print("Quantidade de cervejas: ");
@@ -24,10 +24,7 @@ public class Program {
 		System.out.print("Quantidade de espetinhos: ");
 		bill.barbecue = sc.nextInt();
 		
-		//cálculo dos valores:
-		
-		
-		//informações do relatório:
+		//report:
 		
 		
 		sc.close();
